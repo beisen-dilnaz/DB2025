@@ -1,0 +1,12 @@
+CREATE DATABASE university_main
+    OWNER CURRENT_USER
+    TEMPLATE template0
+    ENCODING 'UTF8';
+
+CREATE DATABASE university_archive
+    TEMPLATE template0
+    CONNECTION LIMIT 50;
+
+CREATE DATABASE university_test
+    IS_TEMPLATE TRUE
+    CONNECTION LIMIT 10;
